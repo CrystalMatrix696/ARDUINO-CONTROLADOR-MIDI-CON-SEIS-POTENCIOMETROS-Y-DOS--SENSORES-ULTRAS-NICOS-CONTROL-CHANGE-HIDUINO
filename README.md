@@ -6,7 +6,7 @@ AUTOR: BALANDRA SÁNCHEZ FRANCISCO JAVIER.
 PROGRAMA ESPECIALIZADO: TECNOLOGÍA MUSICAL CON SOFTWARE LIBRE.
 
 INTRUCCIONES.
-Para ensamblar el controlador MIDI, con seis potenciómetros y dos sensores ultrasónicos, 
+Para ensamblar el controlador MIDI, con seis potenciómetros y con dos sensores ultrasónicos, 
 necesitamos contar con los siguientes materiales:
 1. Dos sensores ultrasónicos; modelo HC-SR-04.
 2. Cables tipo jumper´s, con puntas de conección de hembra hacia macho; por favor,
@@ -15,39 +15,39 @@ consulte las imagenes que se encuentran anexas en este repositorio, son diagrama
 4. Cautín, pasta para soldar y soldadura de estaño.
 Para comenzar, dentro de los archivos anexados del repositorio se encuentran, una serie de 
 imágenes, las cuales nos proporcionan la facilidad para realizar el ensamblado del controlador 
-//MIDI USB; además anexo una serie de instrucciones, para programar la tarjeta Arduino Uno y Mega, 
-//es un dispositivo MIDI, Plug and Play; es decir, al conectar el controlador MIDI directamente al 
-//ordenador, no será necesario instalar ningún programa o algún driver privativo o de uso libre, 
-//únicamente el sistema instala un driver genérico por defecto.
-//Como sabemos la tarjeta Arduino Uno o Mega, se compone de entradas analógicas y digitales, 
-//las cuales nos permiten interactuar y dar instrucciones para realizar que Arduino realice dichas 
-//funciones. En la primera imagen nos muestra del lado izquierdo 6 potenciómetros, en la parte central 
-//se ubica la tarjeta Arduino UNO, y del lado izquierdo se ubican los sensores ultrasónicos, 
-//los cuales tendrán la función similar que los potenciómetros, manipular para parámetros enviando 
-//datos MIDI via USB.
-//Los cables de color negro representan la polaridad negativa estos se conectan al PIN “GND”, 
-//denominada tierra; por otro lado, los cables de color rojo representan la polaridad positiva y 
-//conducen voltaje estos se conectan en el “PIN 5V”; es decir, conducen cinco voltios; sin embargo, 
-//se necesita conocer la polaridad de los potenciómetros, se muestra en la imagen del diagrama número 
-//dos; la perilla cuenta con tres pines, el pin denominado “tierra” ubicado del lado izquierdo se 
-//conecta al “PIN GND”, el pin denominado “análogo”, el cual se conecta directamente a los pines 
-//analógicos de la tarjeta Arduino Uno o Mega; el pin denominado 5V, ubicado del lado derecho se 
-//conecta al PIN 5V de la tarjeta de Arduino.
-//Las entradas analógicas vienen marcadas en la placa de Arduino UNO o MEGA; en la placa Arduino UNO: 
-//A0, A1, A2, A3, A4, A5; en la placa Arduino MEGA: AO hasta A15; es decir, hace alusión que en 
-//la placa Arduino UNO se pueden conectar hasta seis potenciómetros, y en la placa Arduino MEGA hasta 
-//16 potenciómetros.
-//
-//Cabe señalar, que tarjeta Arduino UNO y MEGA, cuentan únicamente con tres pines “GND”; por tanto, 
-//en el caso de los seis potenciómetros sumando los dos sensores nos faltarían cinco pines “GND”, 
-//caso similar que se presenta con el PIN 5 V, y/o en casos de proyectos que involucren más sensores 
-//o potenciómetros; para solucionar, se utiliza un conector con dos salidas, el cual provee 
-//normalmente dos tornillos en la cabeza, este sirve para apretar los cables de un extremo y  
-//otros cables del otro extremo, por lo que, estas puntas se deben soldar y se conectan al conector, 
-//con la finalidad, que únicamente provea un cable, para al PIN GND y otro para el PIN 5v.
+MIDI USB; además anexo una serie de instrucciones, para programar la tarjeta Arduino Uno y Mega, 
+Es un dispositivo MIDI, Plug and Play; es decir, al conectar el controlador MIDI directamente al 
+ordenador, no será necesario instalar ningún programa o algún driver privativo o de uso libre, 
+únicamente dentro del sistema se instala un driver genérico por defecto.
+Como sabemos la tarjeta Arduino Uno o Mega, se compone de entradas analógicas y digitales, 
+las cuales nos permiten interactuar y dar instrucciones ,para realizar que Arduino realice dichas 
+funciones. En la primera imagen nos muestra del lado izquierdo 6 potenciómetros, en la parte central 
+se ubica la tarjeta Arduino UNO, y del lado izquierdo se ubican los sensores ultrasónicos, 
+los cuales tendrán la función similar que los potenciómetros, manipular parámetros enviando 
+datos MIDI via USB.
+Los cables de color negro representan la polaridad negativa, estos se conectan al PIN “GND”, 
+denominada tierra; por otro lado, los cables de color rojo representan la polaridad positiva y 
+conducen voltaje estos se conectan en el “PIN 5V”; es decir, conducen cinco voltios; sin embargo, 
+se necesita conocer la polaridad de los potenciómetros, se muestra en la imagen del diagrama número 
+dos; la perilla cuenta con tres pines, el pin denominado “tierra” ubicado del lado izquierdo se 
+conecta al “PIN GND”, el pin denominado “análogo”, el cual se conecta directamente a los pines 
+analógicos de la tarjeta Arduino Uno o Mega; el pin denominado 5V, ubicado del lado derecho se 
+conecta al PIN 5V de la tarjeta de Arduino.
+Las entradas analógicas vienen marcadas en la placa de Arduino UNO o MEGA; en la placa Arduino UNO: 
+A0, A1, A2, A3, A4, A5; en la placa Arduino MEGA: AO hasta A15; es decir, hace alusión que en 
+la placa Arduino UNO se pueden conectar hasta seis potenciómetros, y en la placa Arduino MEGA hasta 
+16 potenciómetros.
 
-//Para soldar, los tipos jumpers en la parte superior tienen una cubierta de plástico, ubica en 
-//los lados una entrada esta tiene normalmente un cuadro metálico, ingresa el alfiler en las esquinas 
+Cabe señalar, que la tarjeta Arduino UNO y MEGA, cuentan únicamente con tres pines “GND”; por tanto, 
+en el caso de los seis potenciómetros sumando los dos sensores nos faltarían cinco pines “GND”, 
+caso similar que se presenta con el PIN 5 V, y/o en casos de proyectos que involucren más sensores 
+o potenciómetros; para solucionar, se utiliza un conector con dos salidas, el cual provee 
+normalmente dos tornillos en la cabeza, este sirve para apretar los cables de un extremo y  
+otros cables del otro extremo, con otro tornillo, por lo que, estas puntas se deben soldar y se conectan al conector, 
+con la finalidad, que únicamente provea un cable, para al PIN GND y otro para el PIN 5v.
+
+Para soldar, los cables tipos jumpers en la parte superior tienen una cubierta de plástico, ubica en 
+los lados una entrada esta tiene normalmente un cuadro metálico, ingresa el alfiler en las esquinas 
 //de abajo, al hacer presión se botará dicha cubierta, esto sirve para soldar al conectar el cable 
 //directamente a los pines de los potenciómetros, al quedar descubierta la punta del cable; este 
 //procedimiento se puede hacer en los dos extremos en el caso de los pines GND y 5V, en los pines 
