@@ -2,10 +2,13 @@
 MIXER WITH 6 POTENCIOMETER´S AND 2 SENSOR ULTRASONIC MIDI USB, CONTROL CHANGE, HIDUINO PLUG AND PLAY MIDI INTERFACE.
 
 ---------------------------"UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO"---------------------------
+
 AUTOR: BALANDRA SÁNCHEZ FRANCISCO JAVIER.
+
 PROGRAMA ESPECIALIZADO: TECNOLOGÍA MUSICAL CON SOFTWARE LIBRE.
 
 INTRUCCIONES.
+
 Para ensamblar el controlador MIDI, con seis potenciómetros y con dos sensores ultrasónicos, 
 necesitamos contar con los siguientes materiales:
 1. Dos sensores ultrasónicos; modelo HC-SR-04.
