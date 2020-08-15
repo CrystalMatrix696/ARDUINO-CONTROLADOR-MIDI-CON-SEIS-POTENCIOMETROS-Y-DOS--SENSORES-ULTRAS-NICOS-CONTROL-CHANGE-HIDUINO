@@ -1,20 +1,20 @@
-# ARDUINO-CONTROLADOR-MIDI-CON-SEIS-POTENCIOMETROS
+# ARDUINO-CONTROLADOR-MIDI-CON-SEIS-POTENCIOMETROS-Y-DOS-SENSORES-ULTRASÓNICOS-CONTROL-CHANGE-CONVERSION-HIDUINO
 MIXER WITH 6 POTENCIOMETER´S AND 2 SENSOR ULTRASONIC MIDI USB, CONTROL CHANGE, HIDUINO PLUG AND PLAY MIDI INTERFACE.
 
-//---------------------------"UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO"---------------------------
-//ALUMNO: BALANDRA SÁNCHEZ FRANCISCO JAVIER.
-//PROGRAMA ESPECIALIZADO: TECNOLOGÍA MUSICAL CON SOFTWARE LIBRE.
+---------------------------"UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO"---------------------------
+AUTOR: BALANDRA SÁNCHEZ FRANCISCO JAVIER.
+PROGRAMA ESPECIALIZADO: TECNOLOGÍA MUSICAL CON SOFTWARE LIBRE.
 
-//INTRUCCIONES.
-//Para ensamblar el controlador MIDI, con seis potenciómetros y dos sensores ultrasónicos, 
-//necesitamos los siguientes materiales:
-//1. Dos sensores ultrasónicos; modelo HC-SR-04.
-//2. Cables tipo jumper´s, con puntas de conección de hembra hacia macho; por favor,
-//consulte las imagenes que se encuentran anexas en este repositorio.
-//3. Seis potenciometros de 100 KOhms.
-//4. Cautín, pasta para soldar y soldadura de estaño.
-//Para comenzar, dentro de los archivos anexados del repositorio se encuentran, una serie de 
-//imágenes, las cuales nos proporcionan la facilidad para realizar el ensamblado del controlador 
+INTRUCCIONES.
+Para ensamblar el controlador MIDI, con seis potenciómetros y dos sensores ultrasónicos, 
+necesitamos contar con los siguientes materiales:
+1. Dos sensores ultrasónicos; modelo HC-SR-04.
+2. Cables tipo jumper´s, con puntas de conección de hembra hacia macho; por favor,
+consulte las imagenes que se encuentran anexas en este repositorio, son diagramas para la instalación.
+3. Seis potenciometros de 100 KOhms.
+4. Cautín, pasta para soldar y soldadura de estaño.
+Para comenzar, dentro de los archivos anexados del repositorio se encuentran, una serie de 
+imágenes, las cuales nos proporcionan la facilidad para realizar el ensamblado del controlador 
 //MIDI USB; además anexo una serie de instrucciones, para programar la tarjeta Arduino Uno y Mega, 
 //es un dispositivo MIDI, Plug and Play; es decir, al conectar el controlador MIDI directamente al 
 //ordenador, no será necesario instalar ningún programa o algún driver privativo o de uso libre, 
