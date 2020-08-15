@@ -48,34 +48,35 @@ con la finalidad, que únicamente provea un cable, para al PIN GND y otro para e
 
 Para soldar, los cables tipos jumpers en la parte superior tienen una cubierta de plástico, ubica en 
 los lados una entrada esta tiene normalmente un cuadro metálico, ingresa el alfiler en las esquinas 
-//de abajo, al hacer presión se botará dicha cubierta, esto sirve para soldar al conectar el cable 
-//directamente a los pines de los potenciómetros, al quedar descubierta la punta del cable; este 
-//procedimiento se puede hacer en los dos extremos en el caso de los pines GND y 5V, en los pines 
-//que sean exclusivos para las entradas analógicas y digitales, no se recomienda retirar la cubierta,
-//en la entrada macho.
+de abajo, al hacer presión se botará dicha cubierta, esto sirve para soldar las puntos despues al conectar el cable 
+directamente a los pines de los potenciómetros, al quedar descubierta la punta del cable; este 
+procedimiento se puede hacer en los dos extremos en el caso de los pines GND y 5V, en los pines 
+que sean exclusivos para las entradas analógicas y digitales, no se recomienda retirar la cubierta,
+en la entrada macho.
 
-//Para finalizar, en el caso de los sensores ultrasónicos no es necesario soldar, o en su caso 
-//que no quieran soldar, pueden utilizar una pistola de silicón para fijar, los cables tipo 
-//jumper´s directamente a los pines.
+Para finalizar, en el caso de los sensores ultrasónicos no es necesario soldar, o en su caso 
+que no quieran soldar, pueden utilizar una pistola de silicón para fijar, los cables tipo 
+jumper´s directamente a los pines.
 
-//Los sensores ultrasónicos, en la parte trasera vienen rotulados, los pines con GND, VCC, ECHO, 
-//TRIG; los pines GND, se conecta al PIN GND de la placa de Arduino Uno o Mega, y los pines VCC se 
-//conectan al pin 5V de la placa Arduino; sin embargo, el “PIN TRIG” este se conectará al PIN ~5 y el 
-//“PIN ECHO” este se conectará al PIN 4, ambos pines se conectan en las entradas digitales, se pueden 
-//visualizar en las imágenes de los diagramas.
-//Para finalizar, el sensor ultrasónico número dos, el “PIN ECHO” se conecta al “PIN 7” de las 
-//entradas digitales; y el “PIN TRIG” este se conectará al “PIN ~6; como puedes notar en ambos 
-//sensores los pines para TRIG o TRIGGER, siempre se conectarán algún pin que tenga el símbolo ~, 
-//es importante para que pueda funcionar dicho dispositivo del sensor, el cual envía un pulso 
-//ultrasónico y echo es el receptor, por tanto,en caso de conectar en otros pines los sensores el
-//código viene con las instrucciones, para darle intrucción que pines reciben dicha información.
+Los sensores ultrasónicos, en la parte trasera vienen rotulados, los pines con GND, VCC, ECHO, 
+TRIG; los pines GND, se conecta al PIN GND de la placa de Arduino Uno o Mega, y los pines VCC se 
+conectan al pin 5V de la placa Arduino; sin embargo, el “PIN TRIG” este se conectará al PIN ~5 y el 
+“PIN ECHO” este se conectará al PIN 4, ambos pines se conectan en las entradas digitales, se pueden 
+visualizar en las imágenes de los diagramas el cableado.
+Para finalizar, el sensor ultrasónico número dos, el “PIN ECHO” se conecta al “PIN 7” de las 
+entradas digitales; y el “PIN TRIG” este se conectará al “PIN ~6; como puedes notar en ambos 
+sensores los pines para TRIG o TRIGGER, siempre se conectarán algún pin que tenga el símbolo ~, 
+es importante para que pueda funcionar dicho dispositivo del sensor, el cual envía un pulso 
+ultrasónico y echo es el receptor, por tanto,en caso de conectar en otros pines los sensores el
+código viene con las instrucciones, para darle intrucción que pines reciben dicha información.
 
-//Para comenzar, se necesitan los programas LOOP MIDI, y Hairless-MIDI, estos nos servirán para 
-//realizar el testeo de los potenciómetros y sensores ultrasónicos; el siguiente código se conforma 
-//de tres partes, estas partes están divididas, en el inicio, void setup y void loop; primero descarga 
-//ARDUINO IDE, en caso que gustes utilizar el programa online Arduino Web Editor, lo puede buscar en 
-//Google o utilizando el siguiente enlace: 
-    //https%3A%2F%2Fcreate.arduino.cc%2Feditor&usg=AOvVaw0fWpfesvgeGm3YLagOubXF  
+Para comenzar, se necesitan los programas LOOP MIDI, y Hairless-MIDI, estos nos servirán para 
+realizar el testeo de los potenciómetros y sensores ultrasónicos; el siguiente código se conforma 
+de tres partes, estas partes están divididas, en el inicio, void setup y void loop; primero descarga 
+ARDUINO IDE, en caso que gustes utilizar el programa online Arduino Web Editor, lo puede buscar en 
+google o utilizando el siguiente enlace: 
+    https%3A%2F%2Fcreate.arduino.cc%2Feditor&usg=AOvVaw0fWpfesvgeGm3YLagOubXF  
+ 
  //Carga el siguiente el siguiente Código en Arduino IDE o Arduino Web Editor:
  
  
@@ -157,22 +158,22 @@ void loop () {
 
 //-----------------------------------------------1.MIXER 6 POTS, MIDI ABLETON, VOID LOOP, FIN-----------------------------------------------------------
 
-
-//Una vez cargado el código dentro del programa, copila dicho código y súbelo a la tarjeta Arduino UNO o MEGA, posteriormente dentro del código busca la división 
-//del Código “…---1. MIXER 6 POTS MIDI ABLETON, VOID SETUP INICIO---…; verifique que este activo el Baud Rate  “Serial.begin(57600); //PRUEBA O TEST”, se verifica 
-//que no tenga dos diagonales ejemplo:
-//A)	ACTIVADO.
+HASTA AQUI TERMINA EL CÓDIGO.
+Una vez cargado el código dentro del programa, copila dicho código y súbelo a la tarjeta Arduino UNO o MEGA, posteriormente dentro del código busca la división
+del Código “…---1. MIXER 6 POTS MIDI ABLETON, VOID SETUP INICIO---…; verifique que este activo el Baud Rate  “Serial.begin(57600); //PRUEBA O TEST”, se verifica 
+que no tenga dos diagonales ejemplo:
+A)	ACTIVADO.
 Serial.begin(31250); // HIDUINO; FINAL, OJO QUITAR DIAGONALES PARA HABILITAR, ESTA OPCION O LA DE ABAJO.
 B)	 DESACTIVADO
-Serial.begin(31250); // HIDUINO; FINAL, OJO QUITAR DIAGONALES PARA HABILITAR, ESTA OPCION O LA DE ABAJO.
+//Serial.begin(31250); // HIDUINO; FINAL, OJO QUITAR DIAGONALES PARA HABILITAR, ESTA OPCION O LA DE ABAJO.
 
-//Es necesario mencionar, que únicamente actives una de las opciones, para evitar problemas en las instrucciones del código; una vez, subido a la paca Arduino el
-//código citado, abre Monitor serie y verifica que el Baud Rate del monitor se encuentre en 5700, empieza a girar los potenciómetros y notaras que otorga monitor, 
-//las lecturas de los movimientos de cada potenciómetro, una vez, realizada las lecturas de los potenciómetros procedemos, a complementar el código, esto 
-//será cortando pedazos del siguiente código y pegando en la división que corresponda sea INICIO, VOID SETUP, VOID LOOP.
+Es necesario mencionar, que únicamente actives una de las opciones, para evitar problemas en las instrucciones del código; una vez, subido a la paca Arduino el
+código citado, abre Monitor serie y verifica que el Baud Rate del monitor se encuentre en 57060, empieza a girar los potenciómetros y notaras que otorga monitor en serie las muestras, ahora selecciona el Baud Rate en 112500 y mueve los potenciometros , este paso es unicamente para los potenciometros, posteriormente para los sensores se trabajara con este ultimo Baud Rate.
+Una vez, realizada las lecturas de los potenciómetros procedemos, a complementar el código, esto 
+será cortando pedazos del siguiente código y pegando en la división que corresponda sea INICIO, VOID SETUP, VOID LOOP.
 
-// Este código es el final, por tanto, antes de copiarlo y pegarlo, para dar rapidez lograrían perder el tiempo, porque sería un nuevo código, y los valores 
-//asignados y muestras tomadas por el Monitor en serie se perderían, es la razón, por la cual es necesario cortar el código y pegarlo, para evitar se pierdan los //valores de los potenciómetros; por tanto, comienza pegando las divisiones del código 2 y 3, los cuales corresponden a los sensores ultrasónicos, al finalizar //subelos directamente a la tarjeta Arduino.
+Este código es el final, por tanto, antes de copiarlo y pegarlo, para dar rapidez lograrían perder el tiempo, porque sería un nuevo código, y los valores 
+asignados y muestras tomadas por el Monitor en serie se perderían, es la razón, por la cual es necesario cortar el código y pegarlo, para evitar se pierdan los valores de los potenciómetros; por tanto, comienza pegando las divisiones del código 2 y 3, los cuales corresponden a los sensores ultrasónicos, al finalizar subelos directamente a la tarjeta Arduino.
 
 
 
